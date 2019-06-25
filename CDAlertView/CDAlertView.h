@@ -3,6 +3,7 @@
 //  CDAlertView
 //
 //  Created by Candost Dagdeviren on 29/11/2016.
+//  Updated by Lee S Avery on 25/06/2019.
 //  Copyright © 2016 Candost Dagdeviren. All rights reserved.
 //
 
