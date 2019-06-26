@@ -421,7 +421,7 @@ open class CDAlertView: UIView {
 //        }
 
         popupCenterYPositionBeforeKeyboard = popupView.center.y
-        let difference = coverViewWindowCoordinates.y - (keyboardSize.minY + keyboardSize.height)
+        let difference = coverViewWindowCoordinates.y - (keyboardSize.minY - keyboardSize.height)
         popupView.center.y += difference
     }
 
