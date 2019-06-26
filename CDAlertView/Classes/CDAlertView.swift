@@ -416,6 +416,7 @@ open class CDAlertView: UIView {
         guard let coverViewWindowCoordinates = coverView.superview?.convert(CGPoint(x: 0, y: coverView.frame.maxY), to: nil) else {
             return
         }
+        print(coverViewWindowCoordinates)
         if coverViewWindowCoordinates.y <= (keyboardSize.minY - keyboardSize.height) {
             return
         }
