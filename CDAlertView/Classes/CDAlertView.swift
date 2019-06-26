@@ -421,8 +421,9 @@ open class CDAlertView: UIView {
 //        }
 
         popupCenterYPositionBeforeKeyboard = popupView.center.y
-        let difference = coverViewWindowCoordinates.y - (keyboardSize.minY - keyboardSize.height)
-        popupView.center.y += difference
+        let availableScreen = UIScreen.main.bounds.height - keyboardSize.height
+//        let difference = coverViewWindowCoordinates.y - (keyboardSize.minY - keyboardSize.height)
+        popupView.center.y = availableScreen / 2
     }
 
     @objc func keyboardWillHide(_ notification: Notification) {
